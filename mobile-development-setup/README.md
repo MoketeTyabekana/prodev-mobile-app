@@ -1,48 +1,50 @@
-# prodev-mobile-setup
+# Welcome to your Expo app 👋
 
-## Objective
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-Mobile development demands more computational resources compared to web development. To ensure a smooth development experience, we will be using the Expo Framework for React Native, which simplifies mobile app development and testing.
+## Get started
 
-## Prerequisites
+1. Install dependencies
 
-To successfully complete this task, ensure you have the following:
+   ```bash
+   npm install
+   ```
 
-- **Node.js LTS** installed
-- **VS Code** (our recommended IDE)
-- **macOS, Linux, or Windows**
-- **Expo Go** installed on your physical device (Android or iOS)
+2. Start the app
 
-These tools are essential for completing the upcoming projects efficiently.
+   ```bash
+   npx expo start
+   ```
 
-## Instructions
+In the output, you'll find options to open the app in a
 
-By now, you should already have Node.js LTS, VS Code, and a compatible operating system installed. This task focuses on setting up Expo Go on your physical device.
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-### Why Expo Go?
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-Unlike web development, mobile development relies on device emulators to test applications. However, keeping up with the ever-evolving mobile ecosystem (e.g., iPhone 7 → iPhone 16 Pro Max, various Android devices) can be costly in terms of hardware requirements.
+## Get a fresh project
 
-Expo Go provides a cost-effective solution by allowing you to test and run your React Native applications directly on your physical device, supporting both iOS and Android seamlessly.
+When you're ready, run:
 
-## Steps to Install Expo Go
+```bash
+npm run reset-project
+```
 
-1. Visit the official Expo Go homepage: [https://expo.dev/go](https://expo.dev/go)
-2. Select the latest SDK version.
-3. Click on **Install** for your device:
-	- **Android:** Install from the Google Play Store.
-	- **iOS:** Install from the Apple App Store.
-4. Open the Expo Go app on your device.
-5. Create a new account or log in if you already have one.
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Documentation Guidance
+## Learn more
 
-Document your setup process and any challenges faced in this `README.md` file. This will help you track your progress and troubleshoot any issues that arise during development.
+To learn more about developing your project with Expo, look at the following resources:
 
----
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-**Repo:**
-- GitHub repository: `prodev-mobile-setup`
-- Directory: `mobile-development-setup`
-- File: `README.md`
-# prodev-mobile-setup
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
