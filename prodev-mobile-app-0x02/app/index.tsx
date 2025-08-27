@@ -1,12 +1,4 @@
-import {
-  ImageBackground,
-  Dimensions,
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-  StyleSheet,
-} from "react-native";
+import { Text, View, StyleSheet, Image, ImageBackground, Dimensions, TouchableOpacity } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -18,36 +10,30 @@ export default function Index() {
           style={styles.background}
           resizeMode="cover"
         >
-          <View
-            style={{
-              flex: 1,
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Image source={require("@/assets/images/Logo.png")} />
+          <View style={styles.container}>
+            <View style={styles.companyLogo}>
+              <Image source={require("@/assets/images/Logo.png")} />
+            </View>
+
             <View style={styles.textGroup}>
-              <Text style={styles.textLarge}>
-                Find your favorite place here
-              </Text>
+              <Text style={styles.textLarge}>Find your favorite place here</Text>
               <Text style={styles.textSmall}>The best prices for over 2 </Text>
               <Text style={styles.textSmall}>million properties worldwide</Text>
             </View>
 
-            <View style={styles.buttonGroup}>
-              <TouchableOpacity style={styles.button}>
-                <Text style={{ ...styles.textSmall, color: "black" }}>
-                  Join here
-                </Text>
-              </TouchableOpacity>
+            <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
+              <View style={styles.buttonGroup}>
+                <TouchableOpacity style={styles.button}>
+                  <Text style={{ ...styles.textSmall, color: "black" }}>Join here</Text>
+                </TouchableOpacity>
 
-              <TouchableOpacity style={styles.transparentButton}>
-                <Text style={styles.textSmall}>Sign In</Text>
-              </TouchableOpacity>
-            </View>
-
-            <View style={{ alignItems: "center", paddingVertical: 20 }}>
-              <Text style={{ color: "white" }}>Continue to home</Text>
+                <TouchableOpacity style={styles.transparentButton}>
+                  <Text style={styles.textSmall}>Sign In</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={{ alignItems: "center", paddingVertical: 20 }}>
+                <Text style={{ color: "white" }}>Continue to home</Text>
+              </View>
             </View>
           </View>
         </ImageBackground>
