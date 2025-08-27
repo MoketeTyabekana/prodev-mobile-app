@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-      backgroundColor: "#90caf9",
+    backgroundColor: "#90caf9",
   },
-   largeText: {
+  largeText: {
     fontSize: 30,
     color: "#f44336",
     marginBottom: 5,
