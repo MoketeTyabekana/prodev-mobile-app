@@ -1,8 +1,14 @@
+import { navigate } from "expo-router/build/global-state/routing";
 import { Text, View, StyleSheet, Image, ImageBackground, Dimensions, TouchableOpacity } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
+import { useNavigation } from '@react-navigation/native';
+
 
 export default function Index() {
+  const navigation = useNavigation();
+
   return (
+    
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
         <ImageBackground
@@ -23,11 +29,11 @@ export default function Index() {
 
             <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
               <View style={styles.buttonGroup}>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("join")}>
                   <Text style={{ ...styles.textSmall, color: "black" }}>Join here</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.transparentButton}>
+                <TouchableOpacity style={styles.transparentButton} onPress={() => navigation.navigate("signin")}>
                   <Text style={styles.textSmall}>Sign In</Text>
                 </TouchableOpacity>
               </View>
