@@ -21,7 +21,7 @@ const Home = () => {
           <View style={styles.searchControlGroup}>
             <Text style={styles.searchFormText}>Where to?</Text>
             <TextInput
-              style={{ ...styles.searchControl, ...styles.searchFormText }}
+              style={{ ...styles.searchControl,  }}
               placeholder="Location . Date . Add guest"
             />
           </View>

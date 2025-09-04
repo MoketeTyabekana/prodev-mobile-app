@@ -12,13 +12,16 @@ const styles = StyleSheet.create({
     searchGroup: {
          padding: 16,
         backgroundColor: '#34967C',
+
     },
     searchFormGroup: {
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: '#fff',
-        borderRadius: 12,
-        padding: 8,
+        borderRadius: 50,
+        paddingLeft: 26,
+        paddingRight: 8,
+        paddingVertical: 6,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.1,
@@ -34,17 +37,19 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#333',
         marginBottom: 4,
+        alignItems: 'center',
+        flex: 1,
     },
     searchControl: {
-        backgroundColor: '#F5F5F5',
+        
         borderRadius: 8,
-        padding: 8,
-        fontSize: 14,
+       
+        fontSize:12,
         color: '#333',
     },
     searchButton: {
-        backgroundColor: '#007AFF',
-        borderRadius: 8,
+        backgroundColor: '#FFA800',
+        borderRadius: 100,
         padding: 8,
         justifyContent: 'center',
         alignItems: 'center',
