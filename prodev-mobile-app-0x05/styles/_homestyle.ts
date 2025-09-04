@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#F5F5F5',
-       
+      paddingHorizontal: 16,
        
     },
     searchGroup: {
@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
     filterContainer: {
         width: 56,
         height: 56,
-        backgroundColor: '#F5F5F5',
         borderRadius: 12,
         justifyContent: 'center',
         alignItems: 'center',
@@ -67,7 +66,7 @@ const styles = StyleSheet.create({
     listingContainer: {
         flex: 1,
         marginTop: 16,
-        paddingHorizontal: 16,
+     
     },
     paginationContainer: {
         alignItems: 'center',
@@ -83,6 +82,11 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
+    },
+    filterText: {
+        fontSize: 10,
+        marginTop: 4,
+        textAlign: 'center',
     },
 })
 

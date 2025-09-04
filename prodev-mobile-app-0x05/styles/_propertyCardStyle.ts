@@ -3,12 +3,13 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
       height: 400,
+      width: '100%',
       borderRadius: 10,
       overflow: "hidden",
       marginBottom: 16,
     },
     overlay: {
-      height: 400,
+      ...StyleSheet.absoluteFillObject,
       backgroundColor: "rgba(0,0,0,0.3)",
       padding: 16,
       justifyContent: "space-between",
@@ -69,6 +70,7 @@ const styles = StyleSheet.create({
       position: "absolute",
       bottom: 30,
       left: 30,
+      
     },
   });
 

@@ -11,6 +11,7 @@ import {
   TouchableHighlight,
 } from "react-native";
 import { FILTERS, SAMPLE_DATA } from "@/constants/data";
+import { FILTER_IMAGES } from "@/constants/data";
 
 const Home = () => {
   return (
@@ -38,19 +39,18 @@ const Home = () => {
       >
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <View style={styles.filterGroup}>
-            {FILTERS.map((filter, index) => (
-              <View style={styles.filterContainer} key={index}>
-                <Image
-                  style={{
-                    flex: 1,
-                  }}
-                  source={require("@/assets/images/mansion.png")}
-                  resizeMode="contain"
-                />
-                <Text>{filter}</Text>
-              </View>
-            ))}
-          </View>
+  {FILTERS.map((filter, index) => (
+    <View style={styles.filterContainer} key={index}>
+      <Image
+        style={{ flex: 1 }}
+        source={FILTER_IMAGES[filter]}
+        resizeMode="contain"
+      />
+      <Text style={styles.filterText}>{filter}</Text>
+    </View>
+  ))}
+</View>
+
         </ScrollView>
       </View>
 

@@ -137,4 +137,19 @@ const FILTERS: string [] = [
     "Pet-Friendly",
     "Secluded"
   ];
-  export { SAMPLE_DATA, FILTERS }
+
+const FILTER_IMAGES: Record<string, any> = {
+  Mansion: require("@/assets/images/mansion.png"),
+  CountrySide: require("@/assets/images/castle-tower.png"), // closest match to countryside/rural
+  Villa: require("@/assets/images/apartment.png"), // assuming villa-style architecture
+  Tropical: require("@/assets/images/vacations.png"),
+  New: require("@/assets/images/home.png"), // placeholder for modern/new
+  Amazing: require("@/assets/images/swimming-pool.png"), // visually striking
+  Beachfront: require("@/assets/images/vacations.png"), // tropical/beach overlap
+  Luxury: require("@/assets/images/mansion.png"), // reused for luxury
+  "Family-Friendly": require("@/assets/images/apartment.png"), // assuming spacious layout
+  "Pet-Friendly": require("@/assets/images/apartment.png"), // placeholder unless you have pet-specific icons
+  Secluded: require("@/assets/images/castle-tower.png"), // remote/isolated vibe
+};
+
+  export { SAMPLE_DATA, FILTERS, FILTER_IMAGES }
