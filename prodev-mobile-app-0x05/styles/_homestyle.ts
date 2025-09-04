@@ -6,11 +6,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#F5F5F5',
-        paddingHorizontal: 16,
-        paddingTop: 32,
+       
+       
     },
     searchGroup: {
-        marginBottom: 16,
+         padding: 16,
+        backgroundColor: '#34967C',
     },
     searchFormGroup: {
         flexDirection: 'row',
