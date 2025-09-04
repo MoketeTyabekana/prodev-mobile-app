@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     group: {
       position: "absolute",
       bottom: 30,
-      left: 30,
+      left: 10,
       
     },
   });
