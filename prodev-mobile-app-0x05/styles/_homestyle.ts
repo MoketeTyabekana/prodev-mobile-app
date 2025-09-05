@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#F5F5F5',
-      paddingHorizontal: 16,
+      
        
     },
     searchGroup: {
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     },
     listingContainer: {
         flex: 1,
-        marginTop: 16,
+        margin: 16,
      
     },
     paginationContainer: {
